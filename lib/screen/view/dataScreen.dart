@@ -20,9 +20,11 @@ class _FruitDataState extends State<FruitData> {
         ModalRoute.of(context)!.settings.arguments as ProductModel;
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.amber.shade100,
         appBar: AppBar(
             title: Text("Fruit Data", style: GoogleFonts.poppins(fontSize: 18)),
             centerTitle: true,
+            backgroundColor: Colors.indigo.shade600,
             leading: IconButton(
                 onPressed: () {
                   Navigator.pop(context);
@@ -59,7 +61,6 @@ class _FruitDataState extends State<FruitData> {
                       print(p1.name);
                       homeProvider!.addcart(p1);
                       Navigator.pop(context);
-
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepOrange.shade500),

@@ -23,7 +23,9 @@ class _homeScreenState extends State<homeScreen> {
     homeProvider = Provider.of<HomeProvider>(context, listen: false);
     return SafeArea(
         child: Scaffold(
+          backgroundColor: Colors.amber.shade100,
       appBar: AppBar(
+        backgroundColor: Colors.indigo.shade600,
         title: Text(
           "🛍 Flipkart",
           style: GoogleFonts.poppins(fontSize: 18, letterSpacing: 1),

@@ -11,10 +11,8 @@ class FruitData extends StatefulWidget {
   @override
   State<FruitData> createState() => _FruitDataState();
 }
-
 class _FruitDataState extends State<FruitData> {
   HomeProvider? homeProvider;
-
   @override
   Widget build(BuildContext context) {
     homeProvider = Provider.of<HomeProvider>(context, listen: false);
@@ -58,7 +56,10 @@ class _FruitDataState extends State<FruitData> {
                 ),
                 ElevatedButton(
                     onPressed: () {
+                      print(p1.name);
                       homeProvider!.addcart(p1);
+                      Navigator.pop(context);
+
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.deepOrange.shade500),

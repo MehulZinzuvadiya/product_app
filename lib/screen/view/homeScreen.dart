@@ -13,6 +13,7 @@ class homeScreen extends StatefulWidget {
 }
 
 class _homeScreenState extends State<homeScreen> {
+
   Color c1 = Color(0xff2874F0);
   Color c2 = Color(0xffFB641B);
   HomeProvider? homeProvider;
